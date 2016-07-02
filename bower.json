@@ -1,0 +1,24 @@
+{
+  "name": "app-template",
+  "version": "0.0.1",
+  "description": "This project is an application skeleton for a typical AngularJS 1 web app.",
+  "authors": [
+    "Hung BCP"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/at-hungbcp/app-template",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test"
+  ],
+  "dependencies": {
+    "angular": "^1.5.0",
+    "angular-route": "^1.5.0",
+    "angular-loader": "^1.5.0",
+    "angular-mocks": "^1.5.0",
+    "bootstrap": "^3.3.6"
+  }
+}
