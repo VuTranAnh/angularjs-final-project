@@ -7,3 +7,11 @@ var myApp = angular.module('myApp', [
 	'myControllers', // module contains all my controller
 ]);
 
+myApp.config(['$routeProvider', function ($routeProvider) {
+	$routeProvider
+		.when('/about', {
+			templateUrl: 'view/about.html',
+			controller: 'AboutController'
+		})
+		.otherwise({redirectTo: '/about'});
+}]);
