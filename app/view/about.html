@@ -6,10 +6,10 @@
 				<li>About</li>
 			</ul>
 		</header>
-
+		
 		<div class="content_body" ng-controller="TabController as tab">
-			<div class="sidebar">
-				<ul class="nav">
+			<div class="col col-md-3 sidebar">
+				<ul>
 					<li ng-class="{active: tab.isSelected(1)}">
 						<a href="" ng-click="tab.selectTab(1)">Overview</a>
 					</li>
@@ -29,7 +29,7 @@
 
 			</div>
 
-			<div class="main_content">
+			<div class="col col-md-9 main_content">
 				<div ng-show="tab.isSelected(1)">
 					<p>Studied at:</p>
 					<small>Past:</small>

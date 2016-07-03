@@ -79,7 +79,8 @@ li {
 }
 
 .headline ul li:first-child {
-	border-left: 1px solid #e9eaed;	
+	border-left: 1px solid #e9eaed;
+
 }
 
 .headline ul li a {
@@ -98,14 +99,23 @@ li {
 	padding: 10px 0;
 	background: #f6f7f9;
 	margin-top: 15px;
-	border-bottom: 1px solid red;
 }
 
 .content_body {
 	background-color: #fff;
 }
 
-.sidebar {
-	display: inline-block;
+.sidebar a {
+	text-decoration: none;
+	color: #999;
+}
+
+.sidebar a:hover {
+	color: #000;
+}
+
+.sidebar .active a {
+	color: #000;
+	font-weight: bold; 
 }
 

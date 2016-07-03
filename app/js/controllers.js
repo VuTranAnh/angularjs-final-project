@@ -2,9 +2,13 @@
 
 var myControllers = angular.module('myControllers', ['ngRoute']);
 
-myControllers.controller('AboutController', ['$scope', '$route',
-	function ($scope, $route) {
+myControllers.controller('AboutController', ['$scope', '$route', '$location',
+	function ($scope, $route, $location) {
 		$scope.template = $route.current.templateUrl;
+		$scope.isActive = function (viewLocation) {
+     var active = (viewLocation === $location.path());
+     return active;
+};
 	}
 ]);
 
