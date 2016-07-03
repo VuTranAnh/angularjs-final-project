@@ -20,8 +20,31 @@
 </head>
 <body>
   
-    <!-- Routing defined view, this will load specified view for registered route/controller -->
-    <div ng-view></div>
+  <div class="container wrapper">
+    <div class="row">
+      <div class="heading">
+        <div>
+          <img src="images/cover.jpg" id="cover">    
+        </div>
+
+        <div class="headline">
+          <ul>
+            <li><img src="images/avatar.jpg" id="avatar"></li>
+            <li><a href="" ng-click="tab = 1">About</a></li>
+            <li><a href="" ng-click="tab = 2">Photos</a></li>
+            <li><a href="" ng-click="tab = 3">More</a></li>
+          </ul>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div ng-view></div>
+    </div>
   </div>
+
+  <!-- Routing defined view, this will load specified view for registered route/controller -->
+  
 </body>
 </html>

@@ -13,5 +13,9 @@ myApp.config(['$routeProvider', function ($routeProvider) {
 			templateUrl: 'view/about.html',
 			controller: 'AboutController'
 		})
+		.when('/photos', {
+			templateUrl: 'view/photos.html',
+			controller: 'PhotosController'
+		})
 		.otherwise({redirectTo: '/about'});
 }]);

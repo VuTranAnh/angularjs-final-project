@@ -15,3 +15,48 @@
 @viewport {
   width: device-width;
 }
+* {
+	margin: 0;
+	padding: 0;
+}
+body {
+	background-color: #e9ebee;
+	
+}
+.wrapper {
+	width: 851px;
+}
+
+#cover {
+	width: 851px;
+	height: 315px;
+}
+
+#avatar {
+	height: 168px;
+	width: 168px;
+	margin-top: -165px;	
+	
+}
+.headline {
+	height: 43px;
+	background-color: #fff;
+	border: 1px solid #e9eaed;
+}
+.headline ul {
+	list-style: none;
+
+}
+
+.headline ul li {
+	display: inline-block;
+	height: 43px;
+	border-right: 1px solid #e9eaed;	
+	padding: 0 15px;
+	vertical-align: middle;
+	font-size: 14px;
+	text-transform: uppercase;
+	line-height: 43px;
+	color: #365899;
+}
+

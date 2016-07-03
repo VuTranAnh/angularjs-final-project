@@ -7,3 +7,9 @@ myControllers.controller('AboutController', ['$scope', '$route',
 		$scope.template = $route.current.templateUrl;
 	}
 ]);
+
+myControllers.controller('PhotosController', ['$scope', '$route',
+	function ($scope, $route) {
+		$scope.template = $route.current.templateUrl;
+	}
+]);
