@@ -43,6 +43,17 @@ li {
 	margin-top: -165px;	
 	
 }
+
+.heading {
+	position: relative;
+}
+
+.heading .avatar {
+	position: absolute;
+	left: 30px;
+	bottom: -40px;
+}
+
 .headline {
 	height: 43px;
 	background-color: #fff;
@@ -50,20 +61,25 @@ li {
 	border-top: none;
 }
 
+.headline ul {
+	margin: 0 0 0 240px;
+}
+
 .headline ul li {
-	display: inline-block;
+	float: left;
 	height: 43px;
 	border-right: 1px solid #e9eaed;	
-	
-	
+	border-left: 1px solid transparent;
 	padding: 0 15px;
-
 	vertical-align: middle;
 	font-size: 14px;
 	font-weight: bold;
 	line-height: 43px;
 	color: #365899;
+}
 
+.headline ul li:first-child {
+	border-left: 1px solid #e9eaed;	
 }
 
 .headline ul li a {
