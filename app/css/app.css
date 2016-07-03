@@ -23,6 +23,11 @@ body {
 	background-color: #e9ebee;
 	
 }
+
+li {
+	list-style: none;
+}
+
 .wrapper {
 	width: 851px;
 }
@@ -42,21 +47,40 @@ body {
 	height: 43px;
 	background-color: #fff;
 	border: 1px solid #e9eaed;
-}
-.headline ul {
-	list-style: none;
-
+	border-top: none;
 }
 
 .headline ul li {
 	display: inline-block;
 	height: 43px;
 	border-right: 1px solid #e9eaed;	
+	
+	
 	padding: 0 15px;
+
 	vertical-align: middle;
 	font-size: 14px;
-	text-transform: uppercase;
+	font-weight: bold;
 	line-height: 43px;
 	color: #365899;
+
 }
 
+.headline ul li a {
+	text-decoration: none;
+}
+
+.headline ul li a:hover {
+	color: silver;
+}
+
+.headline ul li a:active {
+	color: #000;
+}
+
+.main header {
+	padding: 10px 0;
+	background: #f6f7f9;
+	margin-top: 15px;
+	border-bottom: 1px solid red;
+}
