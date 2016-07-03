@@ -7,19 +7,57 @@
 			</ul>
 		</header>
 
-		<div class="content_body">
+		<div class="content_body" ng-controller="TabController as tab">
 			<div class="sidebar">
-				<ul>
-					<li>Overview</li>
-					<li>Work and education</li>
-					<li>Places I've lived</li>
-					<li>Contact and basic info</li>
-					<li>Details about me</li>
+				<ul class="nav">
+					<li ng-class="{active: tab.isSelected(1)}">
+						<a href="" ng-click="tab.selectTab(1)">Overview</a>
+					</li>
+					<li ng-class="{active: tab.isSelected(2)}">
+						<a href="" ng-click="tab.selectTab(2)">Work and education</a>
+					</li>
+					<li ng-class="{active: tab.isSelected(3)}">
+						<a href="" ng-click="tab.selectTab(3)">Places I've lived</a>
+					</li>
+					<li ng-class="{active: tab.isSelected(4)}">
+						<a href="" ng-click="tab.selectTab(4)">Contact and basic info</a>
+					</li>
+					<li ng-class="{active: tab.isSelected(5)}">
+						<a href="" ng-click="tab.selectTab(5)">Details about me</a>
+					</li>
 				</ul>
+
 			</div>
 
 			<div class="main_content">
-				
+				<div ng-show="tab.isSelected(1)">
+					<p>Studied at:</p>
+					<small>Past:</small>
+
+					<p>Lives in:</p>
+
+					<ul>
+						<li>Birthday:</li>
+						<li>AIM</li>
+					</ul>
+				</div>
+
+				<div ng-show="tab.isSelected(2)">
+					
+				</div>
+
+				<div ng-show="tab.isSelected(3)">
+					
+				</div>
+
+				<div ng-show="tab.isSelected(4)">
+					
+				</div>
+
+				<div ng-show="tab.isSelected(5)">
+					
+				</div>
+
 			</div>
 		</div>
 	</div>

@@ -100,3 +100,12 @@ li {
 	margin-top: 15px;
 	border-bottom: 1px solid red;
 }
+
+.content_body {
+	background-color: #fff;
+}
+
+.sidebar {
+	display: inline-block;
+}
+
