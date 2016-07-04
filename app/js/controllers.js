@@ -8,7 +8,9 @@ myControllers.controller('AboutController', ['$scope', '$route', '$location',
 		$scope.isActive = function (viewLocation) {
      var active = (viewLocation === $location.path());
      return active;
-};
+		};
+		console.log(2);
+		console.log(3);
 	}
 ]);
 
