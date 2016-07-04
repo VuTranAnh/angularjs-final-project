@@ -42,6 +42,7 @@ li {
 	position: absolute;
 	left: 30px;
 	bottom: -20px;
+	border: 1px solid #d3d6db;
 }
 
 .heading {
@@ -120,11 +121,12 @@ li {
 }
 .content_body {
 	background-color: #fff;
-	
+	height: 300px;
 }
 
 .sidebar {
 	padding-left: 0;
+	height: 300px;
 	border-right: 1px solid #d3d6db;
 }
 .sidebar li {
