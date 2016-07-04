@@ -9,77 +9,112 @@
 	</header>
 	
 	<div class="content_body" ng-controller="TabController as tab">
-		<div class="col col-md-3 sidebar">
-			<ul>
-				<li ng-class="{active: tab.isSelected(1)}">
-					<a href="" ng-click="tab.selectTab(1)">Overview</a>
-				</li>
-				<li ng-class="{active: tab.isSelected(2)}">
-					<a href="" ng-click="tab.selectTab(2)">Work and education</a>
-				</li>
-				<li ng-class="{active: tab.isSelected(3)}">
-					<a href="" ng-click="tab.selectTab(3)">Places I've lived</a>
-				</li>
-				<li ng-class="{active: tab.isSelected(4)}">
-					<a href="" ng-click="tab.selectTab(4)">Contact and basic info</a>
-				</li>
-				<li ng-class="{active: tab.isSelected(5)}">
-					<a href="" ng-click="tab.selectTab(5)">Details about me</a>
-				</li>
-			</ul>
-		</div>
-
-		<div class="col col-md-9 main_content">
-			<div ng-show="tab.isSelected(1)">
-				<p>Studied at: Da Nang University of Technology</p>
-				<small>Past: THPT Bac Tra My</small>
-
-				<p>Lives in: Da Nang, Viet Nam</p>
-
-			</div>
-
-			<div ng-show="tab.isSelected(2)">
-				<h4>EDUCATION</h4>
+		<div class="row">
+			<div class="col col-md-3 sidebar">
 				<ul>
-					<li>
-						<h4>Da Nang University of Technology</h3>
-						<p>Da Nang, Viet Nam</p>		
+					<li ng-class="{active: tab.isSelected(1)}">
+						<a href="" ng-click="tab.selectTab(1)">Overview</a>
 					</li>
-					<li>
-						<h4>THPT Bac Tra My</h3>
-						<p>Tra My, Quang Nam-Da Nang, Viet Nam</p>
+					<li ng-class="{active: tab.isSelected(2)}">
+						<a href="" ng-click="tab.selectTab(2)">Work and education</a>
+					</li>
+					<li ng-class="{active: tab.isSelected(3)}">
+						<a href="" ng-click="tab.selectTab(3)">Places I've lived</a>
+					</li>
+					<li ng-class="{active: tab.isSelected(4)}">
+						<a href="" ng-click="tab.selectTab(4)">Contact and basic info</a>
+					</li>
+					<li ng-class="{active: tab.isSelected(5)}">
+						<a href="" ng-click="tab.selectTab(5)">Details about me</a>
 					</li>
 				</ul>
+			</div>
+
+			<div class="col col-md-8 main_content">
+				<div ng-show="tab.isSelected(1)">
+					<ul class="overview_list">
+						<li>
+							<img src="images/university.jpg">
+							<p>Studied at: Da Nang University of Technology</p>
+							<small>Past: THPT Bac Tra My</small>
+						</li>
+						<hr>
+						<li>
+							<img src="images/high_school.jpg">
+							<p>Lives in: Da Nang, Viet Nam</p>
+						</li>
+					</ul>
+					
+					
+					
+
+				</div>
+
+				<div ng-show="tab.isSelected(2)">
+					<h4>EDUCATION</h4>
+					<ul>
+						<li>
+							<h5>Da Nang University of Technology</h5>
+							<p>Da Nang, Viet Nam</p>		
+						</li>
+						<hr>
+						<li>
+							<h5>THPT Bac Tra My</h5>
+							<p>Tra My, Quang Nam-Da Nang, Viet Nam</p>
+						</li>
+					</ul>
+					
+				</div>
+
+				<div ng-show="tab.isSelected(3)">
+					<h4>CURRENT CITY AND HOME TOWN</h4>
+					<h5>Da Nang, Viet Nam</h5>
+					<small>Current city</small>
 				
+				</div>
+
+				<div ng-show="tab.isSelected(4)">
+					<h4>BASIC INFOMATION</h4>
+					<p>
+						<span>Gender: </span>
+						<span>Male</span>
+					</p>
+					<p>
+						<span>Birthday:</span>
+						<span>02/11/1993</span>
+					</p>
+					<h4>CONTACT INFOMATION</h4>
+					<ul class="contact_list">
+						<li>
+							<a href="mailto:vuta@asiantech.vn" target="_top">
+								<i class="fa fa-envelope-o fa-fw"></i>Email							
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/VuTranAnh" target="_blank">
+								<i class="fa fa-github fa-fw"></i>Github		
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/trananhvu33" target="_blank">
+								<i class="fa fa-twitter fa-fw"></i>Twitter		
+							</a>
+						</li>
+					</ul>
+					
+					
+				
+				</div>
+
+				<div ng-show="tab.isSelected(5)">
+					<h4>ABOUT ME</h4>
+					<p>Dreamer</p>
+					<h4>FAVORITE QUOTES</h4>
+					<p>A lie is just a great story that someone ruined with the truth</p>
+				
+				</div>
+
 			</div>
-
-			<div ng-show="tab.isSelected(3)">
-				<h4>CURRENT CITY AND HOME TOWN</h4>
-				<h4>Da Nang, Viet Nam</h4>
-				<small>Current city</small>
-			
-			</div>
-
-			<div ng-show="tab.isSelected(4)">
-				<h4>BASIC INFOMATION</h4>
-				<span>Gender</span>
-				<span>Male</span>
-
-				<h4>CONTACT INFOMATION</h4>
-				<p>Email</p>
-				<p>Github</p>
-				<p>Twitter</p>
-			
-			</div>
-
-			<div ng-show="tab.isSelected(5)">
-				<h4>ABOUT ME</h4>
-				<p>Dreamer</p>
-				<h4>FAVORITE QUOTES</h4>
-				<p>A lie is just a great story that someone ruined with the truth</p>
-			
-			</div>
-
 		</div>
 	</div>
 

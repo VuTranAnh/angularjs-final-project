@@ -46,7 +46,12 @@ li {
 
 .heading {
 	position: relative;
-
+}
+.heading h3 {
+  position: absolute;
+  top: 250px;
+  left: 235px;
+  color: white;
 }
 
 .headline {
@@ -92,11 +97,13 @@ li {
 .main {
 	margin-top: 15px;
 	border: 1px solid #d3d6db;
+
 }
 
 .main header {
 	padding: 15px 0;
 	background-color: #f6f7f9;
+	border-bottom: 1px solid #d3d6db;
 }
 
 .header_icon h3 {
@@ -139,3 +146,38 @@ li {
 	font-weight: bold; 
 }
 
+.main_content h4 {
+	padding-bottom: 5px;
+	border-bottom: 1px solid #d3d6db;
+	color: #90949c;
+	font-weight: bold;
+}
+.main_content h5 {
+	color: #365899;
+	font-weight: bold;
+	margin-bottom: 0;
+}
+.overview_list li {
+	margin-top: 15px;
+}
+.overview_list p {
+	margin-bottom: 0;
+}
+.overview_list img {
+	float: left;
+	padding-right: 10px;
+}
+small {
+	color: #90949c;
+}
+
+.contact_list i {
+	padding-right: 25px;
+}
+footer {
+	margin-top: 20px;
+	padding-top: 10px;
+	border-top: 1px solid #d3d6db;
+	color: #737373;
+	font-size: 12px;
+}
