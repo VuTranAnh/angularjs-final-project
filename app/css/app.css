@@ -183,14 +183,15 @@ small {
 .gallery img {
 	width: 212px;
 	height: 212px;
-	border: 1px solid #d3d6db;
 	padding: 3px;
 	float: left;
+	transition: all 0.3s;
 }
 
 .gallery img:hover {
 	border-color: #343434;
-	cursor: pointer;
+	
+	transform: scale(1.1);	
 }
 
 footer {

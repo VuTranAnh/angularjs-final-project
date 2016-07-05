@@ -4,7 +4,7 @@
 		<div class="header_icon">
 			<h3>
 				<img src="images/photos_icon.png">
-				<a href="">Photos</a>
+				<a href="#/photos">Photos</a>
 			</h3>
 		</div>
 	</header>
@@ -14,7 +14,9 @@
 			<div class="col col-md-12">
 				<ul>
 					<li ng-repeat="photo in photos">
-						<img ng-src="{{photo.imageUrl}}">
+						<a href="">
+							<img ng-src="{{photo.imageUrl}}">
+						</a>
 					</li>
 				</ul>
 			</div>
