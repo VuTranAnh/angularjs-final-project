@@ -190,7 +190,6 @@ small {
 
 .gallery img:hover {
 	border-color: #343434;
-	
 	transform: scale(1.1);	
 }
 
@@ -229,6 +228,10 @@ small {
 	animation: slideOutRight 0.5s both ease-in;
 }
 
+.imagepreview {
+	width: 400px;
+	height: 400px;
+}
 /**/
 footer {
 	margin-top: 20px;

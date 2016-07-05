@@ -14,12 +14,24 @@
 			<div class="col col-md-12">
 				<ul>
 					<li ng-repeat="photo in photos">
-						<a href="">
-							<img ng-src="{{photo.imageUrl}}">
+						<a href="" class="pop">
+							<img src="{{photo.imageUrl}}" class="image">
 						</a>
 					</li>
 				</ul>
+					
 			</div>
 		</div>
 	</div>
+	<div class="modal fade" id="imagemodal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">              
+      <div class="modal-body">
+      	<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <img src="" class="imagepreview">
+      </div>
+    </div>
+  </div>
 </div>
+</div>
+
