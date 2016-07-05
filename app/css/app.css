@@ -194,6 +194,42 @@ small {
 	transform: scale(1.1);	
 }
 
+@keyframes slideInRight {
+    from { transform:translateX(100%); opacity: 0 }
+    to { transform: translateX(0); opacity: 1;  }
+}
+/* animation slide Left to Right when leaving page */
+
+@keyframes slideOutRight {
+    from { transform:translateX(0); opacity: 1;}
+    to { transform: translateX(100%); opacity: 0; }
+}
+
+.about.ng-enter {
+  animation: slideInRight 1s both ease-in;
+}
+
+.about.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+.about.ng-leave {
+	animation: slideOutRight 0.5s both ease-in;
+}
+
+.photos.ng-enter {
+	animation: slideInRight 1s both ease-in;
+}
+
+.photos.ng-enter.ng-enter-active {
+  opacity:1;
+}
+
+.photos.ng-leave {
+	animation: slideOutRight 0.5s both ease-in;
+}
+
+/**/
 footer {
 	margin-top: 20px;
 	padding-top: 10px;

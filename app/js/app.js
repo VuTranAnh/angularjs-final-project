@@ -5,6 +5,7 @@
 var myApp = angular.module('myApp', [
 	'ngRoute', // using for routing
 	'myControllers', // module contains all my controller
+	'ngAnimate', // animations
 ]);
 
 myApp.config(['$routeProvider', function ($routeProvider) {
