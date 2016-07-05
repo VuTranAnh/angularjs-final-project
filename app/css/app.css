@@ -175,6 +175,24 @@ small {
 .contact_list i {
 	padding-right: 25px;
 }
+
+.gallery {
+	background-color: #fff;
+}
+
+.gallery img {
+	width: 212px;
+	height: 212px;
+	border: 1px solid #d3d6db;
+	padding: 3px;
+	float: left;
+}
+
+.gallery img:hover {
+	border-color: #343434;
+	cursor: pointer;
+}
+
 footer {
 	margin-top: 20px;
 	padding-top: 10px;
@@ -182,3 +200,4 @@ footer {
 	color: #737373;
 	font-size: 12px;
 }
+

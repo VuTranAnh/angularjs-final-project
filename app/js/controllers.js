@@ -12,7 +12,9 @@ myControllers.controller('AboutController', ['$scope', '$route', '$location',
 myControllers.controller('PhotosController', ['$scope', '$route', '$http',
 	function ($scope, $route, $http) {
 		$scope.template = $route.current.templateUrl;
-		
+		$http.get('photos.json').then(function (response) {
+			$scope.photos = response.data;
+		});
 	}
 ]);
 
