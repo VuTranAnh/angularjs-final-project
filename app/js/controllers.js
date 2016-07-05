@@ -2,6 +2,7 @@
 
 var myControllers = angular.module('myControllers', ['ngRoute']);
 
+// controller for about page
 myControllers.controller('AboutController', ['$scope', '$route', '$location',
 	function ($scope, $route, $location) {
 		$scope.template = $route.current.templateUrl;
@@ -9,6 +10,7 @@ myControllers.controller('AboutController', ['$scope', '$route', '$location',
 	}
 ]);
 
+// controller for photos page
 myControllers.controller('PhotosController', ['$scope', '$route', '$http',
 	function ($scope, $route, $http) {
 		$scope.template = $route.current.templateUrl;
@@ -19,6 +21,7 @@ myControllers.controller('PhotosController', ['$scope', '$route', '$http',
 	}
 ]);
 
+// using tab in about page's side bar
 myControllers.controller('TabController', 
 	function () {
 		this.tab = 1;

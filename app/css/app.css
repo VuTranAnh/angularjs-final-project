@@ -15,10 +15,12 @@
 @viewport {
   width: device-width;
 }
+
 * {
 	margin: 0;
 	padding: 0;
 }
+
 body {
 	background-color: #e9ebee;
 }
@@ -112,12 +114,15 @@ li {
 	margin: 0 12px 0px;
 	padding: 10px 15px;
 }
+
 .header_icon a {
 	font-weight: bold;
 	text-decoration: none;
 	color: #4b4f56;
 	vertical-align: middle;
 }
+
+/*style for about page*/
 .content_body {
 	background-color: #fff;
 	height: 300px;
@@ -176,6 +181,8 @@ small {
 	padding-right: 25px;
 }
 
+/*style for photos page*/
+
 .gallery {
 	background-color: #fff;
 }
@@ -193,6 +200,7 @@ small {
 	transform: scale(1.1);	
 }
 
+/*animations*/
 @keyframes slideInRight {
     from { transform:translateX(100%); opacity: 0 }
     to { transform: translateX(0); opacity: 1;  }
@@ -203,6 +211,8 @@ small {
     from { transform:translateX(0); opacity: 1;}
     to { transform: translateX(100%); opacity: 0; }
 }
+
+/*animate for about page*/
 
 .about.ng-enter {
   animation: slideInRight 1s both ease-in;
@@ -216,6 +226,7 @@ small {
 	animation: slideOutRight 0.5s both ease-in;
 }
 
+/*animate for photo page*/
 .photos.ng-enter {
 	animation: slideInRight 1s both ease-in;
 }
@@ -228,11 +239,12 @@ small {
 	animation: slideOutRight 0.5s both ease-in;
 }
 
+
 .imagepreview {
 	width: 400px;
 	height: 400px;
 }
-/**/
+/* footer section*/
 footer {
 	margin-top: 20px;
 	padding-top: 10px;
